@@ -1,0 +1,60 @@
+.sign-up {
+    background-color: #24353F;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inner {
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+h1 {
+    color: #17A2B8;
+}
+
+.form-control {
+    background-color: transparent;
+    color: #fff;
+
+}
+
+.form-control::placeholder {
+    color: lightgray;
+}
+
+.form-control:focus {
+    background-color: transparent;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn-outline-info {
+    color: #17a2b8;
+    background-color: transparent;
+    background-image: none;
+    border-color: #17a2b8;
+}
+
+.btn-outline-info:hover {
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.btn-outline-info:focus {
+    color: #fff !important;
+    background-color: #17a2b8 !important;
+    box-shadow: 0 0 0 .2rem rgba(23, 162, 184, .5);
+}
+
+.alert {
+    color: #DC3545;
+}
+
+.sign-in-link {
+    transition: 0.3s text-decoration;
+}
+
+.sign-in-link:hover {
+    text-decoration: underline !important;
+}
