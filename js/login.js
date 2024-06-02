@@ -27,7 +27,10 @@ function checkExist() {
 
     var pass = userPassword.value;
     var email = userEmail.value;
-    if (email == '' || pass == '') {
+    if(localStorage.getItem('users') == null){
+        alert.innerHTML = "Please register, you are not registered";
+    }
+    else if (email == '' || pass == '') {
         alert.style.color = '#DC3545';
         alert.innerHTML = 'All inputs is required';
         return false;
@@ -38,12 +41,12 @@ function checkExist() {
                 naame = usersList[i].uName;
                 console.log(naame);
                 localStorage.setItem('naam',JSON.stringify(naame));
-                login.setAttribute('href','home.html');
+                location='home.html';
                 break;
                
             }else{
                 alert.innerHTML = "Incorrect email Or password ";
-                login.removeAttribute('href')
+                
             }
         }
     }
